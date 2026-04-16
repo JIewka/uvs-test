@@ -8,6 +8,12 @@
 
 ## Database setup
 
+While running below mentioned scripts you may encounter PowerShell security policy issue. 
+In order to resolve it run the following command:
+
+```powershell
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+```
 Run this script to start PostgreSQL in Docker, create the `uvsproject` database
 and apply the dbSchema: 
 
